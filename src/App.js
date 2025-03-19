@@ -15,10 +15,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/detect" element={<Home />} />
-          <Route path="/history" element={<HistoryPage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="AgriHeal_AI-app/" element={<LandingPage />} />
+          <Route path="AgriHeal_AI-app/detect" element={<Home />} />
+          <Route path="AgriHeal_AI-app/history" element={<HistoryPage />} />
+          <Route path="AgriHeal_AI-app/about" element={<About />} />
         </Routes>
       </Router>
       <Footer />

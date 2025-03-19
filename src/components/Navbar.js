@@ -32,13 +32,13 @@ const Navbar = () => {
             AgriHeal AI
       </Typography>
       <List>
-        <ListItem button component={Link} to="/">
+        <ListItem button component={Link} to="AgriHeal_AI-app/">
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button component={Link} to="/history">
+        <ListItem button component={Link} to="AgriHeal_AI-app/history">
           <ListItemText primary="History" />
         </ListItem>
-        <ListItem button component={Link} to="/about">
+        <ListItem button component={Link} to="AgriHeal_AI-app/about">
           <ListItemText primary="About" />
         </ListItem>
       </List>
