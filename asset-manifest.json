@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AgriHeal_AI-app/static/css/main.c640e487.css",
+    "main.js": "/AgriHeal_AI-app/static/js/main.9e509f9e.js",
+    "static/media/AI-Powered Crop Monitoring.png": "/AgriHeal_AI-app/static/media/AI-Powered Crop Monitoring.8cda1ea9c503b8e88e66.png",
+    "static/media/ss1.png": "/AgriHeal_AI-app/static/media/ss1.d093e13ee5b1a9ae8151.png",
+    "static/media/ss4.png": "/AgriHeal_AI-app/static/media/ss4.0ac22a385e24f09ae22f.png",
+    "static/media/AI-agriculture.jpeg": "/AgriHeal_AI-app/static/media/AI-agriculture.59ccca997be5549081fe.jpeg",
+    "static/media/ss2.png": "/AgriHeal_AI-app/static/media/ss2.50b309097cb287f90f2e.png",
+    "static/media/Nutrient Deficiency Analysis.jpg": "/AgriHeal_AI-app/static/media/Nutrient Deficiency Analysis.917e233d74a2be45f69e.jpg",
+    "static/media/Plant Disease Detection.jpg": "/AgriHeal_AI-app/static/media/Plant Disease Detection.3f493538b04d4743b8a0.jpg",
+    "static/media/bg.jpg": "/AgriHeal_AI-app/static/media/bg.1afe89692d9641549a2a.jpg",
+    "static/media/Customized Reports & Insights.jpg": "/AgriHeal_AI-app/static/media/Customized Reports & Insights.da005929b050b575c846.jpg",
+    "index.html": "/AgriHeal_AI-app/index.html",
+    "main.c640e487.css.map": "/AgriHeal_AI-app/static/css/main.c640e487.css.map",
+    "main.9e509f9e.js.map": "/AgriHeal_AI-app/static/js/main.9e509f9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c640e487.css",
+    "static/js/main.9e509f9e.js"
+  ]
+}
