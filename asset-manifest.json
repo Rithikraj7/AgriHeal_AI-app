@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AgriHeal_AI-app/static/css/main.c640e487.css",
-    "main.js": "/AgriHeal_AI-app/static/js/main.4189eb45.js",
+    "main.js": "/AgriHeal_AI-app/static/js/main.75cb3b37.js",
     "static/media/AI-Powered Crop Monitoring.png": "/AgriHeal_AI-app/static/media/AI-Powered Crop Monitoring.8cda1ea9c503b8e88e66.png",
     "static/media/ss1.png": "/AgriHeal_AI-app/static/media/ss1.d093e13ee5b1a9ae8151.png",
     "static/media/ss4.png": "/AgriHeal_AI-app/static/media/ss4.0ac22a385e24f09ae22f.png",
@@ -13,10 +13,10 @@
     "static/media/Customized Reports & Insights.jpg": "/AgriHeal_AI-app/static/media/Customized Reports & Insights.da005929b050b575c846.jpg",
     "index.html": "/AgriHeal_AI-app/index.html",
     "main.c640e487.css.map": "/AgriHeal_AI-app/static/css/main.c640e487.css.map",
-    "main.4189eb45.js.map": "/AgriHeal_AI-app/static/js/main.4189eb45.js.map"
+    "main.75cb3b37.js.map": "/AgriHeal_AI-app/static/js/main.75cb3b37.js.map"
   },
   "entrypoints": [
     "static/css/main.c640e487.css",
-    "static/js/main.4189eb45.js"
+    "static/js/main.75cb3b37.js"
   ]
 }
