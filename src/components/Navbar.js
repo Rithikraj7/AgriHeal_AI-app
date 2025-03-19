@@ -98,13 +98,13 @@ const Navbar = () => {
           {/* Desktop nav buttons */}
           {!isMobile && (
             <>
-              <Button color="inherit" component={Link} to="/">
+              <Button color="inherit" component={Link} to="AgriHeal_AI-app/">
                 Home
               </Button>
-              <Button color="inherit" component={Link} to="/history">
+              <Button color="inherit" component={Link} to="AgriHeal_AI-app/history">
                 History
               </Button>
-              <Button color="inherit" component={Link} to="/about">
+              <Button color="inherit" component={Link} to="AgriHeal_AI-app/about">
                 About
               </Button>
             </>
