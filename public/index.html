@@ -39,5 +39,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+       <!-- Fix: Removed the extra '<' before <script> -->
+    <script>
+      var path = window.location.pathname;
+      if (!path.startsWith("/AgriHeal_AI-app")) {
+        window.location.replace("/AgriHeal_AI-app" + path);
+      }
+    </script>
+  </body>  
 </html>
