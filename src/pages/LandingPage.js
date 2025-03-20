@@ -20,7 +20,7 @@ const LandingPage = () => {
         <h1 className="hero-title">AgriHeal AI</h1>
         <p className="hero-subtitle">Harnessing AI to Detect Diseases & Nutrient Deficiencies in Crops</p>
 
-        <button onClick={() => navigate("AgriHeal_AI-app/detect")} className="detect-button">
+        <button onClick={() => navigate("/detect")} className="detect-button">
           Detect Now
         </button>
       </div>

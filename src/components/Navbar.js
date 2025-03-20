@@ -32,13 +32,13 @@ const Navbar = () => {
             AgriHeal AI
       </Typography>
       <List>
-        <ListItem button component={Link} to="AgriHeal_AI-app/">
+        <ListItem button component={Link} to="/">
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button component={Link} to="AgriHeal_AI-app/history">
+        <ListItem button component={Link} to="/history">
           <ListItemText primary="History" />
         </ListItem>
-        <ListItem button component={Link} to="AgriHeal_AI-app/about">
+        <ListItem button component={Link} to="/about">
           <ListItemText primary="About" />
         </ListItem>
       </List>
@@ -98,13 +98,13 @@ const Navbar = () => {
           {/* Desktop nav buttons */}
           {!isMobile && (
             <>
-              <Button color="inherit" component={Link} to="AgriHeal_AI-app/">
+              <Button color="inherit" component={Link} to="/">
                 Home
               </Button>
-              <Button color="inherit" component={Link} to="AgriHeal_AI-app/history">
+              <Button color="inherit" component={Link} to="/history">
                 History
               </Button>
-              <Button color="inherit" component={Link} to="AgriHeal_AI-app/about">
+              <Button color="inherit" component={Link} to="/about">
                 About
               </Button>
             </>
