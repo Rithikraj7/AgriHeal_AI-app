@@ -4,7 +4,11 @@ import {
   Typography,
   Card,
   CardContent,
-  Box
+  Box,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions
 } from '@mui/material';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
@@ -15,6 +19,8 @@ const ImageUpload = ({ onImageUpload }) => {
   const fileInputRef = useRef(null);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
+  const [permissionDenied, setPermissionDenied] = useState(false);
+
 
   // Open File Dialog
   const handleFileInputClick = () => {
@@ -55,6 +61,7 @@ const ImageUpload = ({ onImageUpload }) => {
       }
     } catch (error) {
       console.error('Error accessing camera:', error);
+      setPermissionDenied(true);
     }
   };
 
@@ -84,6 +91,19 @@ const handleCaptureImage = async () => {
       setShowCamera(false); // Hide camera preview
     }
   }, 'image/jpeg');
+};
+
+// Stop camera and close preview
+const handleCloseCamera = () => {
+  if (videoRef.current.srcObject) {
+    videoRef.current.srcObject.getTracks().forEach(track => track.stop());
+  }
+  setShowCamera(false);
+};
+
+// Remove uploaded/captured image & clear results
+const handleCancelImage = () => {
+  setImage(null);
 };
 
   
@@ -204,6 +224,14 @@ const handleCaptureImage = async () => {
               >
                 Capture Image
               </Button>
+              <Button
+            variant="outlined"
+            color="error"
+            sx={{ marginTop: 1 }}
+            onClick={handleCloseCamera}
+          >
+            Close Camera
+          </Button>
             </Box>
           )}
 
@@ -232,6 +260,14 @@ const handleCaptureImage = async () => {
                   boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                 }}
               />
+              <Button
+                variant="contained"
+                color="error"
+                sx={{ position: 'absolute', right: 10 }}
+                onClick={handleCancelImage}
+              >
+                X
+              </Button>
             </Box>
           )}
 
@@ -239,6 +275,14 @@ const handleCaptureImage = async () => {
           <canvas ref={canvasRef} style={{ display: 'none' }} />
         </CardContent>
       </Card>
+      {/* Permission Denied Dialog */}
+      <Dialog open={permissionDenied} onClose={() => setPermissionDenied(false)}>
+        <DialogTitle>Camera Permission Denied</DialogTitle>
+        <DialogContent>Please enable camera access in your browser settings.</DialogContent>
+        <DialogActions>
+          <Button onClick={() => setPermissionDenied(false)}>OK</Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };
